@@ -1,0 +1,287 @@
+body{
+    padding: 0;
+ margin: 0;
+ padding-top: 0%;
+ background-color: #f6f5f6;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.frm{
+    background-color: rgb(222, 217, 212);
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    background-image: url("https://imgur.com/ik4nxM0");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #d9a7f7;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    padding: 0.5%;
+}
+nav ul{
+    display: flex;
+}
+.toggle{
+    display: none;
+}
+
+nav ul li a{
+    margin: 20px;
+    font-family: myriad pro regular;
+    color: #505050;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.logo {
+    font-family: RoadTest ;
+    color: #000000;
+    font-size: 22px;
+    }
+    .logo:hover{
+    color: blueviolet;
+    }
+    .active{
+        font-weight: bold;
+        color: #2d2a2a;
+    }
+    .text_container p:nth-child(1){
+        font-family: calibri;
+        font-weight: bold;
+        color: #7df166;
+        font-size: 25px;
+    }
+    .text-container p:nth-child(2){
+        font-family: calibri;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #0a0a0a;
+        font-size: 60px;
+    }
+    .text-container p:nth-child(3){
+        font-family: myriad pro regular;
+        color: #0e0d0d;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .text-container p{
+        line-height: 0px;
+        margin: 45px 0px 25px;
+    }
+    .text-container{
+        position: absolute;
+        left: 13%;
+        top: 42%;
+        transform: translate(-13%, -42%);
+    }
+
+    .text-container2 p:nth-child(1){
+        font-family: calibri;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: #080808;
+        font-size: 30px;
+    }
+    .text-container2 p:nth-child(2){
+        font-family: myriad pro regular;
+        color: #f6f6fc;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .text-container2 p{
+        line-height: 0px;
+        margin: 45px 0px 25px;
+    }
+    .text-container2{
+        position: absolute;
+        left: 17%;
+        top: 70%;
+        transform: translate(-13%, -42%);
+    }
+    .model{
+        height: 150px;
+        position: absolute;
+        bottom: 300px;
+        left: 75%;
+        transform:translateX(-60%);
+    }
+   .effect{
+       position: absolute;
+       left: 85%;
+       top: 70%;
+       padding: 10px;
+
+   }
+    .effect-wrap .effect{
+     position: -75%;
+       z-index: -1;
+
+     }
+    .effect-1{
+        width: 30px;
+        height: 30px;
+        border: 4px solid #58ff49;
+        right: 40%;
+        bottom: 40%;
+        animation: spin 10s linear infinite;
+    }
+    @keyframes spin{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .ima{
+        position: relative;
+        left: 70%;
+        padding: 100px;
+    }
+    .ima{
+      -webkit-transform: rotate(360deg);
+      animation: rotation 3s linear infinite;
+      -moz-animation: rotation 3s linear infinite;
+      -webkit-animation: rotation 3s linear infinite;
+      -o-animation: rotation 3s linear infinite;
+    }
+    @-webkit-keyframes rotation{
+      from {-webkit-transform: rotate(0deg);}
+       to{-webkit-transform: rotate(360deg);}
+    }
+
+  @media(max-width:1000px){
+      *{
+          box-sizing: border-box;
+      }
+      .model{
+          height: 460px;
+          left: 90px;
+          transform: translate(-90%);
+      }
+      .toggle{
+          display: block;
+      }
+      .text-container{
+          top: 46px;
+      }
+  }
+  @media(max-width:750px){
+section{
+    background-image: none;
+    background-color: #f7f7f7;
+}
+.model{
+    display: none;
+}
+.ima{
+    position: relative;
+    left: 50%;
+    padding: 50px;
+}
+.effect{
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    padding: 10px;
+
+}
+.text-container{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+.text-container2 p:nth-child(1){
+    font-family: calibri;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #e8f1e8;
+    font-size: 20px;
+}
+.text-container2 p:nth-child(2){
+    font-family: myriad pro regular;
+    color: #eaeff3;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 10px;
+    background-color: rgb(222, 176, 245);
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    display: none;
+}
+nav ul li{
+    padding: 10px;
+    background-color: rgb(199, 122, 238);
+    border-radius: 10px;
+    border-style:solid;
+    border-color: #9f99f5;
+    padding-top: 10px;
+}
+nav ul li a{
+    font-family: calibri;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: #5c5c5c;
+
+}
+nav ul li a:hover{
+    color: #121212;
+}
+.toggle:before{
+    content: url('https://imgur.com/vdd8a6n');
+   font-family: calibri;
+    line-height: 30px;
+   z-index: 1;
+    cursor: pointer;
+    background-color: #c372f1;
+       border-radius: 5px;
+       padding: 0;
+      width: 60px;
+      height: 60px;
+       display: flex;
+}
+.toggle.active:before{
+content: url('https://imgur.com/WMCzFJG');
+position: fixed;
+right: 25px;
+line-height: 0px;
+width: 25px;
+height: 25px;
+
+padding: 5px;
+padding-bottom: 5px;
+background-color: #c372f1;
+border-radius: 100px;
+display: block;
+}
+
+nav.active ul
+{
+display: flex !important;
+}
+  }
