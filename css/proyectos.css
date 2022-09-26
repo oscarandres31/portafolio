@@ -16,7 +16,7 @@ a {
     position: relative;
     width: 100%;
     height: 95vh;
-    background-image: url("../imagenes/29364-1920x1080.jpg");
+    background-image: url("https://imgur.com/ik4nxM0.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-background-size: cover ;
@@ -514,7 +514,7 @@ nav ul li a{
         color: #9f99f5;
     }
     .toggle:before{
-        content: url('https://imgur.com/vdd8a6n');
+        content: url('https://imgur.com/vdd8a6n.png');
        font-family: calibri;
         line-height: 30px;
        z-index: 1;
@@ -529,7 +529,7 @@ nav ul li a{
        display: flex;
     }
     .toggle.active:before{
-    content: url('https://imgur.com/WMCzFJG');
+    content: url('https://imgur.com/WMCzFJG.png');
     position: fixed;
     right: 25px;
     line-height: 0px;
